@@ -2,7 +2,6 @@ import React from "react";
 import "./Todo.css";
 
 const Todo = ({ todo }) => {
-  console.log(todo);
   const { title, desc } = todo;
   return (
     <article className="todo">

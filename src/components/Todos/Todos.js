@@ -3,11 +3,10 @@ import Todo from "../../Todo/Todo";
 import "./Todos.css";
 
 const Todos = ({ todos }) => {
-  console.log(todos);
   return (
     <section className="todos">
       {todos.map((todo) => (
-        <Todo todo={todo} key={todo.id} />
+        <Todo todo={todo.todo} key={todo.id} />
       ))}
     </section>
   );
